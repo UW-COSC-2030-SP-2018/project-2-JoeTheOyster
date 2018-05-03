@@ -13,13 +13,13 @@ using namespace std;
 //Joseph DePoyster
 //March 30th, 2018
 //based off psuedo code found @http://rosettacode.org/wiki/Sorting_algorithms/Quicksort
-//return a sorted vector of doubles
-vector<double> quickSort(vector<double>& vec1)
+//return a sorted vector of integers
+vector<int> quickSort(vector<int>& vec1)
 {
-	vector<double> less;
-	vector<double> more;
-	vector<double> pivotList;
-	double pivot;
+	vector<int> less;
+	vector<int> more;
+	vector<int> pivotList;
+	int pivot;
 	if (vec1.size() <= 1)
 	{
 		return vec1;
@@ -57,7 +57,7 @@ vector<double> quickSort(vector<double>& vec1)
 //April 29th 2018
 //returns position of a value in a vector if that value exists in the vector
 //returns -1 if value does not exist in vector
-int binarySearch(vector<double> input, double key, int left, int right)
+int binarySearch(vector<int> input, int key, int left, int right)
 {
 	if (right >= left)
 	{
@@ -75,12 +75,12 @@ int binarySearch(vector<double> input, double key, int left, int right)
 //modified by Joseph DePoyster
 //April 30th, 2018
 //merges two vectors together
-void merge(vector<double> input, int left, int middle, int right)
+void merge(vector<int> input, int left, int middle, int right)
 {
 	int i, j, k;
 
-	vector<double> L;
-	vector<double> R;
+	vector<int> L;
+	vector<int> R;
 
 	for (i = 0; i < L.size(); i++)
 		L[i] = input[left + i];
@@ -127,7 +127,7 @@ void merge(vector<double> input, int left, int middle, int right)
 //modified by Joseph DePoyster
 //April 30th, 2018
 //returns sorted vector
-void mergeSort(vector<double> input, int left, int right)
+void mergeSort(vector<int> input, int left, int right)
 {
 	if (left < right)
 	{
