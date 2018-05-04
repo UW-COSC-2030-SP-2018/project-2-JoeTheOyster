@@ -4,6 +4,8 @@
 //COSC 2030
 //April 29th
 
+//revised May 4th, 2018
+
 /*
 	Contains parts 1 - 3 of project 2. This includes:
 		-Quick sort function (~line 24)

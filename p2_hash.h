@@ -5,6 +5,8 @@
 //COSC 2030
 //May 2nd, 2018
 
+//revised May 4th, 2018
+
 /*	
 	Contains parts 4 - 5 of project 2. This includes:
 		-Text to int hash function (~line 27)
